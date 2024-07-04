@@ -34,7 +34,6 @@ public class Adding_item_in_cart {
         driver.findElement(By.cssSelector("input.promoCode")).sendKeys("rahulshettyacademy");
         driver.findElement(By.cssSelector("button.promoBtn")).click();
         WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(5));
-        f
         w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 
          String[] code = driver.findElement(By.cssSelector("span.promoInfo")).getText().split("e");
