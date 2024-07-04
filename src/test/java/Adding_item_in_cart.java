@@ -27,7 +27,7 @@ public class Adding_item_in_cart {
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 
         Thread.sleep(3000);
-
+main
         addItems(driver,itemsNeeded);
         driver.findElement(By.xpath("//img[@alt=\"Cart\"]")).click();
         driver.findElement(By.xpath("//button[text()=\"PROCEED TO CHECKOUT\"]")).click();
